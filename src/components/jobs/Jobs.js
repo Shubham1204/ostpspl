@@ -7,11 +7,11 @@ const Jobs = (props) => {
 
     const [projects,setProjects] = useState([])
     const [search,setSearch] = useState('');
-    // const [results,setResults] = useState([]);
+    const [results,setResults] = useState([]);
 
-    // const onSearchChange = (event) => {setSearch(event.target.value);
-    // console.log(search)
-    // }
+    const onSearchChange = (event) => {setSearch(event.target.value);
+    console.log(search)
+    }
 
     useEffect(()=> {
 
@@ -29,10 +29,10 @@ const Jobs = (props) => {
             setProjects(projectsData)
         })
 
-        // const filterProjects = projects.filter(project =>{
-        // return project.toLowerCase().includes(search.toLowerCase())
-        // });
-        // setResults(filterProjects);
+        const filterProjects = projects.filter(project =>{
+        return project.toLowerCase().includes(search.toLowerCase())
+        });
+        setResults(filterProjects);
     },[])
     
     
@@ -66,7 +66,7 @@ const Jobs = (props) => {
 
   return (
     <div>
-        {/* <input type="text" value={search} onChange={onSearchChange} placeholder="search"></input> */}
+        {<input type="text" value={search} onChange={onSearchChange} placeholder="search"></input>}
             {projects.map(project =>  (
                 <ProjectSnippet key={project.id} pid={project.id} pname={project.projectname} pdate={project.createdate} pstatus={project.status} /> 
             // <h1>{project.projectname}</h1>        content={post.content}
