@@ -1,3 +1,7 @@
+1. Admin -> admin@gmail.com:admin1234
+2. Manager -> ram@gmail.com:ram1234 
+3. Memeber -> shyam@gmail.com:shyam1234
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
