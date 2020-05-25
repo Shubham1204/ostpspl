@@ -35,13 +35,7 @@ const  toggleSidebar = () => {
   <Link to="/addmanager"><i class="material-icons">monetization_on</i><span class="icon-text"></span>Add Manager</Link>
   <Link to="/addjob" ><i class="material-icons">email</i><span class="icon-text"></span>Add Job<span></span></Link>
       </div>
-  {/* <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
-  <a href="#"><span><i class="material-icons">info</i><span class="icon-text">about</span></a><br>
-  <a href="#"><i class="material-icons">spa</i><span class="icon-text"></span>services</a></span>
-  </a><br>
-  <a href="#"><i class="material-icons">monetization_on</i><span class="icon-text"></span>clients</span></a><br>
-  <a href="#"><i class="material-icons">email</i><span class="icon-text"></span>contact<span></a>
-</div> */}
+
 
 
     </div>
